@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace BDSA2020.Assignment02.Tests
+namespace Assignment3.Tests
 {
     public class ExtensionsTests
     {
@@ -15,7 +15,21 @@ namespace BDSA2020.Assignment02.Tests
             bool uriOneBool = uriOne.IsSecure();
 
             //Assert
-            Assert.Equal(true, uriOneBool);
+            Assert.True(uriOneBool);
+        }
+
+        [Fact]
+        public void Test_If_WordCount_Returns_5_Given_Array_Of_5_Words_And_One_Number() 
+        {
+            //Arrange
+            string input = "Hello my name is number 42";
+
+            //Act
+            int output = input.WordCount();
+
+            //Assert
+            Assert.Equal(5, output);
+
         }
     }
 }

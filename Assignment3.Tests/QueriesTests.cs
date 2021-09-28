@@ -1,7 +1,6 @@
-using System;
 using Xunit;
 
-namespace BDSA2020.Assignment02.Tests
+namespace Assignment3.Tests
 {
     public class QueriesTests
     {
