@@ -1,14 +1,14 @@
 ﻿using System;
+using System.Linq;
 using Assignment3;
 
-namespace BDSA2020.Assignment02
+namespace Assignment3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var words = "What Is 45 100";
-            Console.WriteLine(words.WordCount());
+            Console.WriteLine("Hello World!");
         }
     }
 }
