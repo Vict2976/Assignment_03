@@ -1,5 +1,6 @@
 using System;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
 namespace Assignment3
 {
@@ -23,5 +24,13 @@ namespace Assignment3
             }
             return counter;
         }
+
+        public static void Print<T>(this IEnumerable<T> items){
+            foreach(var item in items){
+                Console.WriteLine(item);
+            }
+        }
+
+        public static void Print<T>(this T item) => Console.WriteLine(item);
     }
 }
